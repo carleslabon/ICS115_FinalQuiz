@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void internalStorage(View view) {
-        String message = authorNameInput.getText().toString() + " SAID: \n" + "&quote;" + quoteInput.getText().toString() + "&quote;";
+        String message = authorNameInput.getText().toString() + " SAID: \n"  + quoteInput.getText().toString();
         try {
             fos = openFileOutput("output.txt", Context.MODE_PRIVATE);
             fos.write(message.getBytes());
