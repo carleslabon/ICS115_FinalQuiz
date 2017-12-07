@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eslabon.finalquiz.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAMOUS QUOTES: "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed">
+    </TextView>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="AUTHOR: "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/authorNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="15"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/author"/>
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="QUOTE: "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/authorNameInput"/>
+
+    <EditText
+        android:id="@+id/quoteInput"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="10"
+        android:scrollHorizontally="false"
+        android:layout_below="@+id/quote"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="internalStorage" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:onClick="toSecondActivity" />
+
+</RelativeLayout>
